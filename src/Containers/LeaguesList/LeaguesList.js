@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getAllLeagues, leagueDetails } from "../../Store/Actions/actions";
+import { getAllLeagues, leagueDetails } from "../../Store/Actions/leaguesActions";
 import LeagueCard from "../LeagueCard/LeagueCard";
 import { Layout } from "element-react/next";
 import * as leaguesAPI from "../../API/leaguesAPI";
@@ -32,7 +32,7 @@ class LeaguesList extends Component {
                   <LeagueCard
                     key={league.id}
                     name={league.name}
-                    details={() => this.props.leagueDetails(league.id)}
+                    details={() => this.props.leagueDetails()}
                   ></LeagueCard>
                 </Layout.Col>
               );
@@ -53,7 +53,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     getAllLeagues: (data) => dispatch(getAllLeagues(data)),
-    leagueDetails: id => dispatch(leagueDetails(id))
+    leagueDetails: dispatch(leagueDetails())
   };
 };
 

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Card, Button } from "element-react/next";
-import "./LeagueCard.css";
-import Image from "../../Assets/logo.jpg";
+import "./TeamCard.css";
+import Image from "../../Assets/team.png";
 
-class LeagueCard extends Component {
+class TeamCard extends Component {
   render() {
     return (
-      <div className="LeagueCard">
+      <div className="TeamCard">
         <Card className="BodyStyle">
           <img
             src={Image}
@@ -16,9 +16,11 @@ class LeagueCard extends Component {
             className="image"
           />
           <div style={{ padding: 10 }}>
-            <span>Competition Name: {this.props.name}</span>
+            <div>Name: {this.props.name}</div>
+            <div>Website: {this.props.website}</div>
+            <div>Email: {this.props.email}</div>
             <div className="bottom clearfix">
-              <Link to="/teams">
+              <Link to="/players">
                 <Button type="text" className="button">
                   Details
                 </Button>
@@ -31,5 +33,4 @@ class LeagueCard extends Component {
   }
 }
 
-
-export default LeagueCard;
+export default TeamCard;

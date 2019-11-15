@@ -1,0 +1,16 @@
+.TeamCard {
+}
+
+.TeamCard .BodyStyle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.TeamCard .button{
+    font-size: 1rem;
+    margin: 1rem;
+    color: red;
+}
