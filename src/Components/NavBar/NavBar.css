@@ -1,0 +1,24 @@
+.NavBar {
+    padding-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.NavBar .Title {
+  height: 4rem;
+  color: white;
+  padding-left: 3rem;
+  padding-block-start: .6rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.NavBar .UpperNav{
+    padding: 1.5rem;
+}
+
+.NavBar .UpperNav span{
+    color: Black;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+}

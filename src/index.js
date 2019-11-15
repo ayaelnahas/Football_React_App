@@ -9,15 +9,10 @@ import './index.css';
 import App from './APP/App';
 import * as serviceWorker from './serviceWorker';
 import 'element-theme-default';
-import {Button} from 'element-react/next'
 
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
-ReactDOM.render(<>
-    <Provider store={store}><App /></Provider>
-    <Button type="primary">Hello</Button>
-</>
-    , document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 //App.use(cors())
 // If you want your app to work offline and load faster, you can change

@@ -1,0 +1,29 @@
+.Footer
+{
+    padding: 17px 0;
+}
+.Footer, .Footer .el-menu 
+{
+    background-color: #324157;
+}
+
+.Footer *
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Footer p 
+{
+    color: #FFFFFF;
+    font-size: 1rem ;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.Footer p span 
+{
+    color: #FF8A73;
+    margin-left: 0.5rem;
+}
+

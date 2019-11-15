@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './App.css'
+import LeaguesPage from '../Pages/Leagues/Leagues';
+import 'element-theme-default';
+
 
 
 
 class App extends Component {
 
   render() {
-    return (<h3>Hello World!</h3>)
+    return (<>
+    <LeaguesPage></LeaguesPage>
+    </>)
   }
 }
 
