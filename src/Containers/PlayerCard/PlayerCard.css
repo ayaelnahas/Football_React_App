@@ -1,7 +1,7 @@
-.TeamCard {
+.PlayerCard {
 }
 
-.TeamCard .BodyStyle {
+.PlayerCard .BodyStyle {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -9,16 +9,8 @@
   margin: 1.5rem;
 }
 
-.TeamCard .button{
-    font-size: 1rem;
-    margin: 1rem;
-    color: red;
-}
-
-
-.TeamCard .Header{
+.PlayerCard .Header{
   background-color: #324157;
   height: 1.5rem;
   margin-bottom: .5rem;
 }
-

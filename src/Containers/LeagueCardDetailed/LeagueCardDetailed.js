@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Card} from "element-react/next";
 import "./LeagueCardDetailed.css";
-import Image from "../../Assets/logo.jpg";
+import Image from "../../Assets/ball.jpg";
 
 class LeagueCardDetailed extends Component {
   render() {

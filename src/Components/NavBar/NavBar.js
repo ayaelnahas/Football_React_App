@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu } from "element-react/next";
-import Image from "../../Assets/logo.jpg";
+import Image from "../../Assets/ball.jpg";
 import "./NavBar.css";
 
 const NavBar = () => {

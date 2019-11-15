@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Card, Button } from "element-react/next";
 import "./LeagueCard.css";
-import Image from "../../Assets/logo.jpg";
+import Image from "../../Assets/ball.jpg";
 
 class LeagueCard extends Component {
   render() {
     return (
       <div className="LeagueCard">
         <Card className="BodyStyle">
+          <div className='Header'></div>
           <img
             src={Image}
             style={{ width: "5rem" }}

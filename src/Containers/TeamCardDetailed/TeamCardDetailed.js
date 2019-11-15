@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import { Card } from "element-react/next";
-import "./LeagueCard.css";
-import Image from "../../Assets/logo.jpg";
+import "./TeamCardDetailed.css";
+import Image from "../../Assets/team.png";
 
 class TeamCardDetailed extends Component {
   state = {
@@ -18,7 +17,7 @@ class TeamCardDetailed extends Component {
   };
   render() {
     return (
-      <div className="LeagueCardDetailed">
+      <div className="TeamCardDetailed">
         <Card className="BodyStyle">
           <img
             src={Image}
@@ -27,11 +26,11 @@ class TeamCardDetailed extends Component {
             className="image"
           />
           <div style={{ padding: 10 }}>
-            <h3>Detailed League</h3>
-            <div>Name: {this.props.DetailedTeam.name}</div>
-            <div>Short Name: {this.props.DetailedTeam.shortName}</div>
-            <div>Founded: {this.props.DetailedTeam.founded}</div>
-            <div>Club Colors: {this.props.DetailedTeam.clubColors}</div>
+            <h3>Detailed Team</h3>
+            <div>Name: {this.state.DetailedTeam.name}</div>
+            <div>Short Name: {this.state.DetailedTeam.shortName}</div>
+            <div>Founded: {this.state.DetailedTeam.founded}</div>
+            <div>Club Colors: {this.state.DetailedTeam.clubColors}</div>
           </div>
         </Card>
       </div>

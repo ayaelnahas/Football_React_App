@@ -9,6 +9,7 @@ class TeamCard extends Component {
     return (
       <div className="TeamCard">
         <Card className="BodyStyle">
+          <div className='Header'></div>
           <img
             src={Image}
             style={{ width: "5rem" }}

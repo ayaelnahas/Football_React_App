@@ -14,3 +14,10 @@
     margin: 1rem;
     color: red;
 }
+
+.LeagueCard .Header{
+  background-color: #324157;
+  height: 1.5rem;
+  margin-bottom: .5rem;
+}
+

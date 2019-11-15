@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import TeamCard from "../TeamCard/TeamCard";
 import { Layout } from "element-react/next";
 
-class LeaguesList extends Component {
+class TeamsList extends Component {
   state = {
     teams: [
       {
@@ -71,4 +71,4 @@ class LeaguesList extends Component {
   }
 }
 
-export default LeaguesList;
+export default TeamsList;

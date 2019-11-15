@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch,Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 import LeaguesPage from "../Pages/Leagues/Leagues";
 import TeamsPage from "../Pages/Teams/Teams";
@@ -26,8 +26,6 @@ class App extends Component {
         <BrowserRouter>
           <>
             <NavBar></NavBar>
-           <LeaguesPage></LeaguesPage> 
-            {/* <TeamsPage></TeamsPage> */}
             {routes}
             <Footer></Footer>
           </>

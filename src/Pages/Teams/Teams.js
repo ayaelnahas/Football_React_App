@@ -11,6 +11,7 @@ const Teams = () => {
           <LeagueCardDetailed></LeagueCardDetailed>
         </Layout.Col>
       </Layout.Row>
+      <h1>Teams</h1>
       <Layout.Row type="flex" justify="space-around">
         <TeamsList></TeamsList>
       </Layout.Row>
