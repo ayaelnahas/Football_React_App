@@ -1,5 +1,5 @@
 import Axios from 'axios';
-//import Url from '../API/Config/url'
+import Url from '../API/Config/url'
 
 // - This file should have all CRUD operations for leagues entity.
 // - Token should be from local storage, this is for trial only.
@@ -8,6 +8,6 @@ import Axios from 'axios';
 
 export const getAll = () => {
     const token = '701a9b665de64ba68c12dfef2e0dec58';
-    return Axios.get('http://api.football-data.org/v2/competitions', { headers: { 'X-Auth-Token': token } });
+    return Axios.get(`${Url}`, { headers: { 'X-Auth-Token': token } });
 }
 
