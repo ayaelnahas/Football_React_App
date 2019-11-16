@@ -11,7 +11,6 @@ class LeaguesList extends Component {
     leaguesAPI
       .getAll()
       .then(response => {
-        console.log(response);
         if (response.status === 200) {
           this.props.getAllLeagues(response.data.competitions);
         }
