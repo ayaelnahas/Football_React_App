@@ -1,20 +1,21 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getAllLeagues, leagueDetails } from "../../Store/Actions/leaguesActions";
+import { getAllLeagues } from "../../Store/Actions/leaguesActions";
 import LeagueCard from "../LeagueCard/LeagueCard";
 import { Layout } from "element-react/next";
 import * as leaguesAPI from "../../API/leaguesAPI";
 
 class LeaguesList extends Component {
   componentDidMount() {
-    console.log('list mounted')
-
-    leaguesAPI.getAll()
+    this.props.startLoading();
+    leaguesAPI
+      .getAll()
       .then(response => {
-        console.log(response)
+        console.log(response);
         if (response.status === 200) {
           this.props.getAllLeagues(response.data.competitions);
         }
+        this.props.endLoading();
       })
       .catch(err => {
         console.log(err);
@@ -40,7 +41,7 @@ class LeaguesList extends Component {
           </Layout.Col>
         </>
       );
-    } 
+    }
   }
 }
 
@@ -52,8 +53,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getAllLeagues: (data) => dispatch(getAllLeagues(data)),
-    leagueDetails: dispatch(leagueDetails())
+    getAllLeagues: data => dispatch(getAllLeagues(data)),
+    startLoading: () => dispatch({ type: "IsLoading" }),
+    endLoading: () => dispatch({ type: "Loaded" })
   };
 };
 
