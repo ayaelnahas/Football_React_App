@@ -8,4 +8,11 @@
   text-align: center;
   margin: 1.5rem;
   background-color: #32415759;
+  border: 5px solid #324157;
+}
+
+.TeamCardDetailed .BodyStyle .BodyText {
+  font-size: 1.2rem;
+  color: black;
+  font-family: inherit;
 }

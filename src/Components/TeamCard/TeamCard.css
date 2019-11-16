@@ -22,3 +22,9 @@
   margin-bottom: .5rem;
 }
 
+
+.TeamCard .BodyStyle .BodyText {
+  font-size: 1.2rem;
+  color: black;
+  font-family: inherit;
+}

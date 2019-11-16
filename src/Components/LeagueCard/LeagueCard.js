@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Card, Button } from "element-react/next";
-import "./TeamCard.css";
-import Image from "../../Assets/team.png";
+import "./LeagueCard.css";
+import Image from "../../Assets/ball.jpg";
 
-class TeamCard extends Component {
+class LeagueCard extends Component {
   render() {
     return (
-      <div className="TeamCard">
+      <div className="LeagueCard">
         <Card className="BodyStyle">
-          <div className='Header'></div>
+          <div className='Ribbon'></div>
           <img
             src={Image}
             style={{ width: "5rem" }}
@@ -17,11 +17,9 @@ class TeamCard extends Component {
             className="image"
           />
           <div style={{ padding: 10 }}>
-            <div>Name: {this.props.name}</div>
-            <div>Website: {this.props.website}</div>
-            <div>Email: {this.props.email}</div>
+            <div className='Header'>Competition Name: {this.props.name}</div>
             <div className="bottom clearfix">
-              <Link to="/players">
+              <Link to="/teams">
                 <Button type="text" className="button">
                   Details
                 </Button>
@@ -34,4 +32,5 @@ class TeamCard extends Component {
   }
 }
 
-export default TeamCard;
+
+export default LeagueCard;

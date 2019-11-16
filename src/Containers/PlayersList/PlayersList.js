@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux'
-import PlayerCard from "../PlayerCard/PlayerCard";
+import PlayerCard from "../../Components/PlayerCard/PlayerCard";
 import { Layout } from "element-react/next";
 
 class PlayersList extends Component {

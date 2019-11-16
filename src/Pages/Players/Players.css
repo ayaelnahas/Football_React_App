@@ -1,0 +1,11 @@
+.PlayersPage{
+
+}
+
+.PlayersPage .Header{
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+    font-family: inherit;
+
+}

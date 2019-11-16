@@ -43,7 +43,7 @@ const initialState = {
       email: null
     }
   ],
-  detailedTeam: {
+  DetailedTeam: {
     id: 18,
     name: "Borussia Mönchengladbach",
     shortName: "M'gladbach",
@@ -54,14 +54,13 @@ const initialState = {
   }
 };
 
-// This reducer will have no actions as the APIs are restricted, 
+// This reducer will have no actions as the APIs are restricted,
 // otherwise i would have selected teams based on League ID.
 
 // this approach is only chosen to maintain the redux structure,
 // but state could have been in the class itself.
 
 const teamsReducer = (state = initialState, action) => {
- 
   return {
     ...state
   };

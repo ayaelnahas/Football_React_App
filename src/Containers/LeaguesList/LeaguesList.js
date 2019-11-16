@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getAllLeagues } from "../../Store/Actions/leaguesActions";
-import LeagueCard from "../LeagueCard/LeagueCard";
+import LeagueCard from "../../Components/LeagueCard/LeagueCard";
 import { Layout } from "element-react/next";
 import * as leaguesAPI from "../../API/leaguesAPI";
 

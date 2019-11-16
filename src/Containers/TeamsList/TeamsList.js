@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import TeamCard from "../TeamCard/TeamCard";
+import TeamCard from '../../Components/TeamCard/TeamCard';
 import { Layout } from "element-react/next";
 
 class TeamsList extends Component {

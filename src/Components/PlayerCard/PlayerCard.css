@@ -14,3 +14,9 @@
   height: 1.5rem;
   margin-bottom: .5rem;
 }
+
+.PlayerCard .BodyStyle .BodyText {
+  font-size: 1.2rem;
+  color: black;
+  font-family: inherit;
+}

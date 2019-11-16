@@ -14,7 +14,7 @@ class PlayerCard extends Component {
             style={{ width: "5rem" }}
             alt="..."
           />
-          <div style={{ padding: 10 }}>
+          <div className='BodyText' style={{ padding: 10 }}>
             <div>Name: {this.props.name}</div>
             <div>Position: {this.props.position}</div>
             <div>CountryOfBirth: {this.props.countryOfBirth}</div>

@@ -15,7 +15,7 @@ class LeagueCardDetailed extends Component {
             alt="..."
             className="image"
           />
-          <div style={{ padding: 10 }}>
+          <div className='BodyText' style={{ padding: 10 }}>
             <h3>Detailed League</h3>
             <div>Name: {this.props.DetailedLeague.name}</div>
             <div>No. of teams: {this.props.DetailedLeague.count}</div>
